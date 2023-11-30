@@ -1,0 +1,68 @@
+.flex-container {
+    display: flex;
+    /* by default it's going to display row */
+    background-color: DodgerBlue;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+   }
+   .flex-container > div, .flex-order > div, .flex-wrap > div, .wrap-reverse > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    height: 20px;
+}
+    .flex-wrap > div, .wrap-reverse > div{
+        width: 150px;
+    }
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    justify-content: flex-end;
+
+}
+.container > div, .column-reverse > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+}
+
+.column-reverse{
+    display: flex;
+    background-color: green;
+    flex-direction: column-reverse;
+}
+/* .flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: purple;
+} */
+.wrap-reverse{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    background-color: black;
+}
+.flex-wrap{
+    display: flex;
+    flex-flow: row wrap ;
+}
+.flex-order{
+    display: flex;
+    background-color: red;
+   
+}
+.flex-order .item-1 {
+    order: 1;
+}
+.flex-order .item2 {
+    order: 2;
+    flex-grow: 8;
+    align-items: center;
+}
+.flex-order .item3 {
+    order: 3;
+}
